@@ -16,75 +16,226 @@
 <body>
 
     <div class="container my-5">
-        <form action='/next.html' class="row g-3"  method="post">
+        <form action='/next_predict' class="row g-3"  method="post">
             <div class="col-md-6">
-                <label for="name" class="form-label">Customer-Id</label>
-                <input type="text" class="form-control" id="name" name="name">
+                <label for="name" class="form-label">CustomerId</label>
+                <input type="text" class="form-control" id="CustomerId" name="CustomerId">
             </div>
+
+        <div class="col-md-6">
+                <label for="name" class="form-label">ProdTaken</label>
+                <input type="text" class="form-control" id="ProdTaken" name="ProdTaken">
+        </div>
+
             <div class="col-md-6">
                 <label for="Age" class="form-label">Age</label>
                 <input type="Age" class="form-control" id="Age" name="Age">
             </div>
 
-
-            <div class="list-group">
-                <p>Preferred Destination</p>
+        <div class="list-group">
+                <p>How Was Customer Contacted</p>
                 <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="paris">
-                    Paris
+                    <input class="form-check-input me-1" type="checkbox" value="Self">
+                    Self
                 </label>
                 <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="london">
-                    London
+                    <input class="form-check-input me-1" type="checkbox" value="Company">
+                    Company
                 </label>
                 <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="dubai">
-                    Dubai
-                </label>
-                <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="newyork">
-                    New York
-                </label>
-                <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="berlin">
-                    Berlin
-                </label>
-                <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="barcelona">
-                    Barcelona
-                </label>
-                <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="mumbai">
-                    Mumbai
-                </label>
-            </div>
+                    <input class="form-check-input me-1" type="checkbox" value="Other">
+                    Other
+            </label>
+        </div>
 
+        <div class="City">
+            <p>City Tire</p>
+            <label class="City">
+                <input class="form-check-input me-1" type="checkbox" value="1">
+                1
+            </label>
+            <label class="City">
+                <input class="form-check-input me-1" type="checkbox" value="2">
+                2
+            </label>
+            <label class="City">
+                <input class="form-check-input me-1" type="checkbox" value="3">
+                3
+        </label>
+        </div>
 
-            <div class="col-md-6">
-                <label for="startDate" class="form-label">Start Date</label>
-                <input type="date" class="form-control" name="startDate">
-            </div>
+        <div class="col-md-6">
+            <label for="Pitch Duration" class="form-label">Pitch Duration</label>
+            <input type="Age" class="form-control" id="Pitch Duration" name="Pitch Duration">
+        </div>
 
-            <div class="col-md-6">
-                <label for="endDate" class="form-label">End Date</label>
-                <input type="date" class="form-control" name="endDate">
-            </div>
+        <div class="Occupation">
+            <p>Occupation</p>
+            <label class="Occupation">
+                <input class="form-check-input me-1" type="checkbox" value="salaried">
+                salaried
+            </label>
+            <label class="Occupation">
+                <input class="form-check-input me-1" type="checkbox" value="small business">
+                small business
+            </label>
+            <label class="Occupation">
+                <input class="form-check-input me-1" type="checkbox" value="others">
+                others
+        </label>
+        </div>
 
-            <div class="col-md-6">
-                <label for="No of days" class="form-label">No of days</label>
-                <input type="No of days" class="form-control" id="No of days" name="No of days">
-            </div>
-            
+        <div class="gender">
+            <p>gender</p>
+            <label class="gender">
+                <input class="form-check-input me-1" type="checkbox" value="male">
+                male
+            </label>
+            <label class="gender">
+                <input class="form-check-input me-1" type="checkbox" value="Female">
+                Female
+            </label>
+            <label class="gender">
+                <input class="form-check-input me-1" type="checkbox" value="others">
+                others
+        </label>
+        </div>
 
-            <div class="col-md-6">
-                <label for="minBudget" class="form-label">Monthly Budget</label>
-                <input type="text" class="form-control" id="minBudget" name="minBudget">
-            </div>
+        <div class="col-md-6">
+            <label for="Pitch Duration" class="form-label">No of Travellers</label>
+            <input type="Age" class="form-control" id="Pitch Duration" name="Pitch Duration">
+        </div>
 
-            <div class="col-md-6">
+        <div class="col-md-6">
+            <label for="Pitch Duration" class="form-label">No of Followups</label>
+            <input type="Age" class="form-control" id="Pitch Duration" name="Pitch Duration">
+        </div>
+
+        <div class="Product">
+            <p>Product</p>
+            <label class="gender">
+                <input class="form-check-input me-1" type="checkbox" value="Dulex">
+                Dulex
+            </label>
+            <label class="gender">
+                <input class="form-check-input me-1" type="checkbox" value="Basic">
+                Basic
+            </label>
+            <label class="gender">
+                <input class="form-check-input me-1" type="checkbox" value="others">
+                others
+        </label>
+        </div>
+
+        <div class="Ratings">
+            <p>Property Ratings</p>
+            <label class="Ratings">
+                <input class="form-check-input me-1" type="checkbox" value="1">
+                3
+            </label>
+            <label class="Ratings">
+                <input class="form-check-input me-1" type="checkbox" value="2">
+                4
+            </label>
+            <label class="Ratings">
+                <input class="form-check-input me-1" type="checkbox" value="3">
+                5
+        </label>
+        </div>
+
+        <div class="ms">
+            <p>Marital Status</p>
+            <label class="ms">
+                <input class="form-check-input me-1" type="checkbox" value="Dulex">
+                married
+            </label>
+            <label class="ms">
+                <input class="form-check-input me-1" type="checkbox" value="Basic">
+                divorced
+            </label>
+            <label class="ms">
+                <input class="form-check-input me-1" type="checkbox" value="others">
+                others
+        </label>
+        </div>
+
+        <div class="col-md-6">
+            <label for="Pitch Duration" class="form-label">No of Trips per Year</label>
+            <input type="Age" class="form-control" id="Pitch Duration" name="Pitch Duration">
+        </div>
+
+        <div class="Passport">
+            <p>Passport</p>
+            <label class="Ratings">
+                <input class="form-check-input me-1" type="checkbox" value="Yes">
+                Yes
+            </label>
+            <label class="Ratings">
+                <input class="form-check-input me-1" type="checkbox" value="No">
+                No
+            </label>
+        </div>
+
+        <div class="pr">
+            <p>Pitch Ratings</p>
+            <label class="pr">
+                <input class="form-check-input me-1" type="checkbox" value="1">
+                1
+            </label>
+            <label class="pr">
+                <input class="form-check-input me-1" type="checkbox" value="2">
+                2
+            </label>
+            <label class="pr">
+                <input class="form-check-input me-1" type="checkbox" value="3">
+                3
+            </label>
+            <label class="pr">
+                <input class="form-check-input me-1" type="checkbox" value="4">
+                4
+            </label>
+            <label class="pr">
+                <input class="form-check-input me-1" type="checkbox" value="5">
+                5
+            </label>
+        </div>
+
+        <div class="car">
+            <p>Car</p>
+            <label class="car">
+                <input class="form-check-input me-1" type="checkbox" value="Yes">
+                Yes
+            </label>
+            <label class="car">
+                <input class="form-check-input me-1" type="checkbox" value="No">
+                No
+            </label>
+        </div>
+
+        <div class="col-md-6">
+            <label for="Pitch Duration" class="form-label">No of Children</label>
+            <input type="Age" class="form-control" id="Pitch Duration" name="Pitch Duration">
+        </div>
+
+        <div class="des">
+            <p>designation</p>
+            <label class="des">
+                <input class="form-check-input me-1" type="checkbox" value="executive">
+                executive
+            </label>
+            <label class="des">
+                <input class="form-check-input me-1" type="checkbox" value="manager">
+                manager
+            </label>
+            <label class="des">
+                <input class="form-check-input me-1" type="checkbox" value="others">
+                others
+        </label>
+        </div>
+        <div class="col-md-6">
                 <label for="minBudget" class="form-label">Monthly Income</label>
                 <input type="text" class="form-control" id="Monthly Income" name="Monthly Income">
-            </div>
+        </div>
 
             <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-dark" type="button">Submit</button>
